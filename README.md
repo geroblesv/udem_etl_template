@@ -36,7 +36,7 @@ Ejemplo:
 import app
 
 if __name__ == '__main__':
-    # Aquí puedes mandar llamar métodos de otras clases.
+    # Aquí puedes mandar llamar métodos de otros módulos.
     app.run()
 ```
 
