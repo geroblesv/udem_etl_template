@@ -4,15 +4,17 @@
 La versión de Python instalada en el servidor es la `3.6.9`, asegurar que los paquetes utilizados sean compatibles con dicha versión.
 
 ### Ambiente virtual
-Si se utiliza un ambiente virtual usar [venv](https://docs.python.org/3/tutorial/venv.html) y llamarlo /venv, este ambiente ya esta agregado al archivo `.gitignore` para que no se incluya en el repositorio final.  Ejemplo:
+Si se utiliza un ambiente virtual usar [venv](https://docs.python.org/3/tutorial/venv.html) y llamarlo /venv, este ambiente ya esta agregado al archivo `.gitignore` para que no se incluya en el repositorio final.  
+Ejemplo:
 ```shell
 python -m venv venv
 ```
 
 Activar el ambiente de la siguiente forma:  
+
 Windows
 ```bash
-\venv\Scripts\activate.bat
+venv\Scripts\activate.bat
 ```
 
 Mac/Linux
