@@ -20,8 +20,21 @@ La ejecución de los ETL's es mediante `CRON`, para agendar la ejecución automa
 
 ## Recomendaciones
 ### Datos sensibles
-Utilizar [config parser](https://docs.python.org/3/library/configparser.html) para variables sensibles como nombre de usuario, contraseñas, puertos, servidores, etc.
+Utilizar [config parser](https://docs.python.org/3/library/configparser.html) para variables sensibles como nombre de usuario, contraseñas, puertos, servidores, etc. 
+Ejemplo:
+```python 
+from configparser import ConfigParser
+
+config = ConfigParser()
+config.read(Path(__file__).resolve().joinpath('config.ini'))
+```
 ### Log
 Imprimir a consola solo lo necesario para no llenar el Log con información basura.
 ### Código
 Seguir las recomendaciones de la [guía de Python](https://www.python.org/dev/peps/pep-0008/)
+### Lectura y escritura de archivos
+Utilizar `Path` para leer y escribir archivos. 
+Ejemplo:
+```python
+file = Path(__file__).resolve().joinpath('file.txt')
+```
