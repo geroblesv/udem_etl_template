@@ -1,2 +1,5 @@
 # Ignore virtual environment
 /venv
+
+# Ignore banner credentials
+config_banner.ini
