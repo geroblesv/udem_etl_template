@@ -40,6 +40,15 @@ if __name__ == '__main__':
     app.run()
 ```
 
+### Credenciales de Banner
+Hay que crear un archivo de configuración con las credenciales de Banner llamado `config_banner.ini` y dejarlo en la carpeta raíz del proyecto siguiendo esta estructura y sustituyendo tu usuario y contraseña en donde dice `tu_usuario_de_banner` y `tu_password_de_banner`:  
+```ini
+[db]
+banner_username = tu_usuario_de_banner
+banner_password = tu_password_de_banner
+```
+Este archivo esta agregado en el archivo `.gitignore` por lo que no se mandaran tus credenciales al servidor y sera remplazado localmente por un archivo de configuración local.
+
 ### Repositorio
 Clonar este repositorio y utilizarlo como guía, después cambiar el repositorio a uno personal utilizando el comando `git remote set-url` y dar acceso de lectura al usuario [geroblesv](https://github.com/geroblesv/)
 
