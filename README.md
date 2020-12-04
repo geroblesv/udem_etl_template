@@ -25,8 +25,15 @@ source venv/bin/activate
 ### Requerimientos
 El servidor utiliza ambientes virtuales, por lo que es necesario utilizar un [archivo de requerimientos](https://pip.pypa.io/en/stable/user_guide/#requirements-files) para la instalación de los paquetes en dicho ambiente.  
 Ejemplo:
+
+Para crear archivo:
 ```shell
 pip freeze > requirements.txt
+```
+
+Para instalar librerias:
+```shell
+pip install -r requirements.txt
 ```
 
 ### Archivo de ejecución
