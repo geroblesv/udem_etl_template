@@ -47,12 +47,20 @@ if __name__ == '__main__':
     app.run()
 ```
 
-### Credenciales de Banner
-Hay que crear un archivo de configuración con las credenciales de Banner llamado `config_banner.ini` y dejarlo en la carpeta raíz del proyecto siguiendo esta estructura y sustituyendo tu usuario y contraseña en donde dice `tu_usuario_de_banner` y `tu_password_de_banner`:  
+### Credenciales
+Hay que crear un archivo de configuración con las credenciales llamado `config.ini` y dejarlo en la carpeta raíz del proyecto siguiendo esta estructura y sustituyendo tu usuario y contraseña en donde dice `tu_usuario_de_banner` y `tu_password_de_banner`:  
 ```ini
-[db]
-banner_username = tu_usuario_de_banner
-banner_password = tu_password_de_banner
+[banner]
+ip = ip_de_banner
+service = servicio_de_banner
+username = usuario_de_db
+password = password_de_db
+
+[sql_server]
+ip = ip_de_sql_server
+database = base_de_datos_de_banner
+username = usuario_de_db
+password = password_de_db
 ```
 Este archivo esta agregado en el archivo `.gitignore` por lo que no se mandaran tus credenciales al servidor y sera remplazado localmente por un archivo de configuración local.
 
